@@ -1,0 +1,34 @@
+<div class="text-container">
+  <p>About ME:</p>
+  <p class="text-xl font-bold"> Hello! I am Tuana. I am an intern in H&R Block and in this website you can find everything I accomplished!
+    So I wanted to give some information about myself here so you can understand me better. I was born in 2002 in Turkey, Ankara,
+    (which is the capital of Turkey).I have been living there ever since I came to Kansas City to play college tennis. 
+    I started playing tennis when I was 8 years old, so basically, I have been playing tennis my whole life. 
+    Tennis brought so much to my life as an experience. I learned discipline at a young age and had a strict lifestyle. 
+    I traveled a lot to go to tennis tournaments around the world, and this way, my English got better before coming to the USA. 
+    I wasn't thinking about playing college tennis until starting High School. With this decision, I started to prepare for it and 
+    started applying to schools with my tennis video with the help of an agency. Came to the USA in 2020; it was the end of the COVID year, 
+    so it was an interesting start to a college experience. First, I was majoring in computer science, but at the end of my sophomore year, 
+    I thought IT was going to be a better fit. Then I switched to IT with a Business Minor, and I have been enjoying it more. In IT, 
+    I think I can fit into many more fields and express my own authentic self better."</p>
+</div>
+
+<br><br>
+<div class=" justify-center fixed w-screen h-screen">
+  <div>
+    <div class="image-gallery py-8 rounded-xl">
+      <img
+        *ngFor="let image of images; let i = index"
+        [src]="image"
+        (click)="showNextImage()"
+        [hidden]="imgIndex !== i"
+      />
+      <button (click)="onNextButtonClick()">Next Image</button>
+    </div>
+  </div>
+</div>
+
+<div class="fixed bottom-0 right-0 p-4">
+  <!-- Display the GIF -->
+  <img src="assets/Pcnt.gif" alt="Tennis Ball GIF" class="w-100 h-100" />
+</div>

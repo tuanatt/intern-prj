@@ -1,0 +1,18 @@
+<div class="fixed w-[130px] shadow-2xl h-screen flex flex-col items-center">
+  <img src="assets/home.png" class="mt-10" (click)="onLinkClick('home')"/><span>Home</span>
+  <img src="assets/account.png" class="mt-10"/><button (click)="onLinkClick('about')">About Me</button>
+  <img src="assets/history.png" class="mt-10 h-[30px]"/><button (click)="onLinkClick('lockbit-history')">LockBit</button>
+    
+<div class =" mt-10"> 
+  <img src="assets/experience.png" class=" h-[30px] ps-10">
+  <mat-select placeholder="Achievements">
+    <button><mat-option value="option1" (click)="onLinkClick('part-1')">Week 1-4</mat-option></button>
+    <mat-option value="option2" (click)="onLinkClick('part-2')">Week 5-9</mat-option>
+  </mat-select>
+</div>  
+<div class="">
+  <a href="mailto:tuanatinaztepe@hotmail.com" style="color: rgb(86, 180, 106)">
+    <img src="assets/mailing.png" alt="Clickable Image" class="ps-9 mt-10 h-[30px]" />
+    <span class="tooltip p-2">send an email</span>
+  </a>
+</div>
